@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soufiane Styles – Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Soufiane Styles</h1>
+        <nav>
+            <ul>
+                <li><a href="#about" title="Conoce más sobre mí">About Me</a></li>
+                <li><a href="#portfolio" title="Mis proyectos destacados">Portfolio</a></li>
+                <li><a href="#contact" title="Envíame un mensaje">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hola, soy Soufiane Styles, diseñador gráfico apasionado por crear experiencias visuales modernas e impactantes.
+        </p>
+    </section>
+
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="grid">
+            <div class="project">Proyecto 1</div>
+            <div class="project">Proyecto 2</div>
+            <div class="project">Proyecto 3</div>
+            <div class="project">Proyecto 4</div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <form>
+            <label for="name">Nombre</label>
+            <input type="text" id="name" required />
+
+            <label for="email">Email</label>
+            <input type="email" id="email" required />
+
+            <label for="message">Mensaje</label>
+            <textarea id="message" rows="5" required></textarea>
+
+            <button type="submit">Enviar Mensaje</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Soufiane Styles</p>
+    </footer>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Proyecto Detallado</h3>
+            <p>Aquí se muestra la descripción completa del proyecto seleccionado.</p>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
